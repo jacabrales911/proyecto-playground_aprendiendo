@@ -18,14 +18,13 @@
         <div class="logo">
         <img src="/images/logo-mercado-liebre.svg" alt="imagen logo">
         </div >
-        <div class="form" action="#" method="GET">
-        <form action="">
-            <label >
-            <input  id="buscarmarca" name="buscar_marca" type="text" placeholder="buscar producto marca" >
-            <i class="fa-solid fa-magnifying-glass"></i>    
-            </label>
+        <div class="form" >
+        <form action="#" method="GET">
+        <label >
+        <input  id="buscarmarca" name="buscar_marca" type="text" placeholder="buscar producto marca" >
+        </label>   
+        <div class="submit"><i class="fa-solid fa-magnifying-glass"></i></div>
         </form>
-            
         </div>
         <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito </p>
         </div>
@@ -37,7 +36,7 @@
             <li><a href="#">Vender</a></li>
             <li><a href="#">Ayuda</a></li>
         </ul>
-        <div class="dividirmitadd"></div>
+        
         <ul class="dividircajas">
             <li><a href="/register"> Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
             <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
@@ -53,15 +52,20 @@
     <section class="banner"> 
     <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section> 
-    <main class="cuerpocentrado">
-     <section>
+    <main class="centrado_reg">
+      <section>
+
+      
         <h3 class="ing-usu">Diligencia formulario</h3>
-         <form action="/" method="POST" class="formulario">
+        <form action="/" method="POST" class="formulario">
         <div class="control-form">
         <label for="nombre-apellido">Nombre y apellido</label>
         <input id="nombre-apellido" name="nombre_apellido" type="text" placeholder="nombre y apellido" required minlength="5">
         </div>
-        
+       
+       
+
+ 
         <div class="control-form">
         <label for="nombre-usuario">Nombre de usuario</label>
         <input id="nombre-usuario" name="nombre_usuario" type="text"  placeholder="nombre de usuario" minlength="6" maxlength="20"  required>
@@ -72,10 +76,12 @@
         <input type="email" name="e_mail" id="e-mail" placeholder="E-mail" required>
         </div>
          
-        <div class="control-form">
+        <div class="control-form_fec">
         <h3>Fecha de nacimiento</h3>
-        <label for="fecha-nacimiento">Fecha de nacimiento</label>
-        <input type="date" name="fecha_nacimiento" id="" value="2021-05-22" min="1978-01-27" max="2022-12-31">
+        <div class="control-form">
+            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="" value="2021-05-22" min="1978-01-27" max="2022-12-31">
+        </div>
         </div>
          
         <div class="control-form">
@@ -83,17 +89,19 @@
         <input id="domicilio" name="domicilio_" type="text" placeholder="Domicilio" required minlength="5" >
         </div>
          
-        <div class="control-form">
+        <div class="control-form_fec">
          <h3>Perfil del usuario</h3>
+         <div class="control-form">
          <label ><input type="radio" name="consultar" id="comprar" value="comprar" checked>Comprar
          </label>
          <label ><input type="radio" name="consultar" id="" value="vender">Vender
          </label>
-            
+        </div>    
         </div>
          
-        <div class="control-form">
+        <div class="control-form_fec ">
             <h3>Categorías de interés</h3>
+            <div class="control-check ">
             <label >
             <input type="checkbox" name="categoria" id="" value="Electro"  > Electro   
             </label>
@@ -109,21 +117,24 @@
             <label >
             <input type="checkbox" name="categoria" id="" value="Vida sana"  >Vida sana   
             </label>
-           
+        </div>  
         </div>
-         <div class="control-form">
+        <div class="control-form">
         <label> Foto perfil</label>
-         <input type="file" name="perfil_usuario" id="" accept=".jpg, .png">
-
+        <input type="file" name="perfil_usuario" id="" accept=".jpg, .png">
         </div>
         <div class="control-form">
         <label for="rpassword">password</label>
         <input type="password" name="password" id="" placeholder="password" required><br>
+        </div>
+        <div class="control-form">
         <label for="rpassword">re-password</label>
         <input type="password" name="password" id="" placeholder="Confirmar password" required><br>
         </div>
         <div class="control-form">
         <button class="boton-form" type="submit">Enviar</button>
+        </div>
+        <div class="control-form">
         <button class="boton-form" type="reset">Borrar</button><br>
         </div>            
  
@@ -133,7 +144,7 @@
         <!-- falta realizar -->
         
 
-     </section>   
+    </section>   
     </main>
     <footer class="piso-estilo">
         <nav >

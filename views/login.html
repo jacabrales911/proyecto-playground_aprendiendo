@@ -18,9 +18,15 @@
         <div class="logo">
         <img src="/images/logo-mercado-liebre.svg" alt="imagen logo">
         </div >
-        <div class="form" action="#" method="GET">
-        <div class="input">buscar producto marca</div>
+        <div class="form" >
+            <form action="#" method="GET">
+               
+                <label >
+                <input  id="buscarmarca" name="buscar_marca" type="text" placeholder="buscar producto marca" >
+                </label>   
+              
         <div class="submit"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </form>
         </div>
         <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito </p>
         </div>
@@ -32,7 +38,7 @@
             <li><a href="#">Vender</a></li>
             <li><a href="#">Ayuda</a></li>
         </ul>
-        <div class="dividirmitadd"></div>
+        
         <ul class="dividircajas">
             <li><a href="/register"> Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
             <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
@@ -49,30 +55,25 @@
     <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section> 
     <main class="cuerpocentrado2">
-       <section>
+        <section class="flex_login">
            <h3 class="ing-usu">Ingresa tu Usuario</h3>
-        <form action="/" method="POST" class="log-form">
+           <form action="/" method="POST" class="log-form">
            
             <div class="control-form">
                 <label for="nombre-usuario">Nombre de usuario</label>
                 <input id="nombre-usuario" name="nombre_usuario" type="text"  placeholder="nombre de usuario" required><br>
-
             </div>
            
             <div class="control-form">
                 <label for="rpassword">registrar password</label>
                 <input type="password" name="rpassword" id="" placeholder="password" required><br>
-                
             </div>
             
             <div class="control-form">
-                <button  class="boton-form" type="submit">Iniciar</button><br>
-                
+            <button  class="boton-form" type="submit">Iniciar</button><br>
             </div>
-          
-        </form>
-
-       </section> 
+            </form>
+        </section> 
     </main>
     <footer class="piso-estilo">
         <nav >
